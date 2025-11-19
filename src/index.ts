@@ -1,8 +1,8 @@
 import type { ColorAPI, Input } from './types';
 
-let p = {},
-	argv = [],
-	env = {};
+let p: Partial<NodeJS.Process> = {},
+	argv: string[] = [],
+	env: Record<string, any> = {};
 if (typeof process !== 'undefined') {
 	({ argv, env } = p = process);
 }
