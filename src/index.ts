@@ -1,11 +1,8 @@
 import type { ColorAPI, Input } from './types';
 
-let p: Partial<NodeJS.Process> = {},
-	argv: string[] = [],
-	env: Record<string, any> = {};
-if (typeof process !== 'undefined') {
-	({ argv, env } = p = process);
-}
+let p: Partial<NodeJS.Process> = globalThis.process || {},
+	argv = p.argv || [],
+	env = p.env || {};
 let isColorSupported: boolean =
 	!(!!env.NO_COLOR || argv.includes('--no-color')) &&
 	(!!env.FORCE_COLOR ||
