@@ -1,5 +1,11 @@
 # piccolore
 
+## 0.1.3
+
+### Patch Changes
+
+- [#4](https://github.com/delucis/piccolore/pull/4) [`33a4b39`](https://github.com/delucis/piccolore/commit/33a4b39cfdfbe81df75a4c4303112f3a47e2e522) Thanks [@delucis](https://github.com/delucis)! - Matches process handling in https://github.com/alexeyraspopov/picocolors/pull/93
+
 ## 0.1.2
 
 ### Patch Changes
