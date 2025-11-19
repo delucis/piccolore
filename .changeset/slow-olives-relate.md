@@ -1,0 +1,5 @@
+---
+"piccolore": patch
+---
+
+Updates README
