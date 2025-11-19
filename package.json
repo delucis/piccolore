@@ -1,6 +1,6 @@
 {
 	"name": "piccolore",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "A tiny, zero-dependency library for styling terminal text",
 	"type": "module",
 	"exports": {
