@@ -1,6 +1,6 @@
 {
 	"name": "piccolore",
-	"version": "0.1.2",
+	"version": "0.0.1",
 	"description": "A tiny, zero-dependency library for styling terminal text",
 	"type": "module",
 	"exports": {
@@ -10,7 +10,7 @@
 		"dist"
 	],
 	"scripts": {
-		"prepublishOnly": "tsdown --no-fixed-extension && clean-publish",
+		"prepublishOnly": "tsdown --no-fixed-extension",
 		"test": "FORCE_COLOR=true vitest"
 	},
 	"keywords": [
@@ -26,7 +26,6 @@
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.5.1",
 		"@types/node": "^24.9.1",
-		"clean-publish": "^6.0.1",
 		"tsdown": "^0.16.4",
 		"vitest": "^4.0.9"
 	}
