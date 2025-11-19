@@ -1,0 +1,33 @@
+{
+	"name": "piccolore",
+	"version": "0.1.2",
+	"description": "A tiny, zero-dependency library for styling terminal text",
+	"type": "module",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"prepublishOnly": "tsdown --no-fixed-extension && clean-publish",
+		"test": "FORCE_COLOR=true vitest"
+	},
+	"keywords": [
+		"colors",
+		"terminal",
+		"cli",
+		"formatting",
+		"styleText"
+	],
+	"repository": "delucis/piccolore",
+	"license": "ISC",
+	"packageManager": "pnpm@10.22.0",
+	"devDependencies": {
+		"@changesets/changelog-github": "^0.5.1",
+		"@types/node": "^24.9.1",
+		"clean-publish": "^6.0.1",
+		"tsdown": "^0.16.4",
+		"vitest": "^4.0.9"
+	}
+}
